@@ -12,20 +12,7 @@ import br.pucpcaldas.acoes.VendasBuilder;
 
 public class VendasBuilderTest {
     
-    @Test
-    public void deveRetornarTrueParaUmaVendaComSucesso(){
-        //Arranjo
-        VendasBuilder builder = new VendasBuilder();
 
-        Vendas umaVenda = builder.produto("Notebook Dell")
-        .preco(2000)
-        .quantidade(2)
-        .precoTotal(4000)
-        .data(LocalDate.now())
-        .build();
-        //Ação, Asserção
-        assertTrue(true);
-    }
     @Test(expected = IllegalArgumentException.class)
     public void deveRetornarErroParaProdutoInexistente(){
         VendasBuilder builder = new VendasBuilder();
