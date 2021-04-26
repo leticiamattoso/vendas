@@ -3,7 +3,7 @@
 ## Rodrigo Bertozzi | Letícia Mattoso | Marcelo Asssis
 # Um Sistema que realiza vendas de computadores e calculo de preço de venda.
 
-# Personas – Clientes, interessados em realizar compras de computadores.
+# Personas – Vendedores, interessados em realizar vendas de computadores.
 # Vendedores, fazem as vendas do produto em específico de computadores e tem o
 # controle de caixa, de entrada e saída de estoques e cadastro de produtos.
 # Estórias
