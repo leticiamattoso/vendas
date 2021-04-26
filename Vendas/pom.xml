@@ -43,7 +43,7 @@
     <repository>
       <id>github</id>
       <name>Git Hub Packages</name>
-      <url>https://maven.pkg.github.com/rodrigobertozzi/bovespa</url>
+      <url>https://maven.pkg.github.com/rodrigobertozzi/vendas</url>
     </repository>
   </distributionManagement>
 

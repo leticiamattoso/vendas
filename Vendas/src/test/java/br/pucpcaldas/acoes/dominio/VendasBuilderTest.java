@@ -5,10 +5,7 @@ package br.pucpcaldas.acoes.dominio;
 import org.joda.time.LocalDate;
 import org.junit.Test;
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 4d0a211a27bc34d624be9bd9d6340b233b790b4a
 import br.pucpcaldas.acoes.VendasBuilder;
 
 public class VendasBuilderTest {
