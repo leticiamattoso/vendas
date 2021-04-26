@@ -7,7 +7,7 @@ import org.joda.time.LocalDate;
 import org.junit.Ignore;
 import org.junit.Test;
 
-import br.pucpcaldas.acoes.Vendas;
+
 import br.pucpcaldas.acoes.VendasBuilder;
 
 public class VendasBuilderTest {
