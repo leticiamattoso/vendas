@@ -1,13 +1,11 @@
 package br.pucpcaldas.acoes.dominio;
 
-import static org.junit.Assert.assertTrue;
 
 import org.joda.time.LocalDate;
 
 import org.junit.Test;
 
 import br.pucpcaldas.acoes.Vendas;
-import br.pucpcaldas.acoes.VendasBuilder;
 
 public class VendasTeste {
     
