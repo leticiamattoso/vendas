@@ -3,24 +3,29 @@ package br.pucpcaldas.acoes.dominio;
 import static org.junit.Assert.assertTrue;
 
 import org.joda.time.LocalDate;
-import org.junit.Ignore;
+
 import org.junit.Test;
+
+import br.pucpcaldas.acoes.Vendas;
+import br.pucpcaldas.acoes.VendasBuilder;
 
 public class VendasTeste {
     
     @Test
-    public void deveRetornarUmaCompra(){
+    public void deveRetornarUmaVenda(){
         VendasBuilder builder = new VendasBuilder();
 
         Vendas umaVenda = builder.produto("Notebook Dell").preco(2000).quantidade(2).precoTotal(4000)
         .data(LocalDate.now()).build();
+
+        assertTrue(true);
     }
 
     @Test(expected = IllegalArgumentException.class)
     public void deveRetornarErroParaProdutoInexistente(){
         VendasBuilder builder = new VendasBuilder();
 
-        new VendasBuilder.produto("camisa")
+        new VendasBuilder().produto("camisa")
         .preco(2000)
         .quantidade(2)
         .precoTotal(4000)
@@ -32,7 +37,7 @@ public class VendasTeste {
     public void deveRetornarErroParaPrecoNegativo(){
         VendasBuilder builder = new VendasBuilder();
 
-        new VendasBuilder.produto("Notebook Asus")
+        new VendasBuilder().produto("Notebook Asus")
         .preco(-2000)
         .quantidade(2)
         .precoTotal(4000)
@@ -43,7 +48,7 @@ public class VendasTeste {
     public void deveRetornarErroParaQuantidadeNegativa(){
         VendasBuilder builder = new VendasBuilder();
 
-        new VendasBuilder.produto("Notebook Dell")
+        new VendasBuilder().produto("Notebook Dell")
         .preco(2000)
         .quantidade(-2)
         .precoTotal(4000)
@@ -54,7 +59,7 @@ public class VendasTeste {
     public void deveRetornarErroParaPrecoTotalNegativo(){
         VendasBuilder builder = new VendasBuilder();
 
-        new VendasBuilder.produto("Notebook Dell")
+        new VendasBuilder().produto("Notebook Dell")
         .preco(2000)
         .quantidade(2)
         .precoTotal(-4000)
@@ -65,7 +70,7 @@ public class VendasTeste {
     public void deveRetornarErroParaDataNula(){
         VendasBuilder builder = new VendasBuilder();
 
-        new VendasBuilder.produto("Notebook Dell")
+        new VendasBuilder().produto("Notebook Dell")
         .preco(2000)
         .quantidade(2)
         .precoTotal(4000)
