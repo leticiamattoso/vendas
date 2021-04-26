@@ -3,9 +3,15 @@
 ## Rodrigo Bertozzi | Letícia Mattoso | Marcelo Asssis
 # Um Sistema que realiza vendas de computadores e calculo de preço de venda.
 
+<<<<<<< HEAD
+# Personas – Vendedores, interessados em realizar vendas de computadores.
+# Vendedores, fazem as vendas do produto em específico de computadores e tem o
+# controle de caixa, de entrada e saída de estoques e cadastro de produtos.
+=======
  Personas – Clientes, interessados em realizar compras de computadores.
  Vendedores, fazem as vendas do produto em específico de computadores e tem o
  controle de caixa, de entrada e saída de estoques e cadastro de produtos.
+>>>>>>> 1273f364f036c0d852bfb5fb3d81849a5b78bc33
 # Estórias
  Como vendedor, necessito do cadastro dos produtos com as seguintes especificações: modelo,
  serial, marca, memória, processamento e sistema operacional.
