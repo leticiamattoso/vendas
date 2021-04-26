@@ -1,4 +1,4 @@
-package Vendas;
+package br.pucpcaldas.acoes;
 
 /**
  * Hello world!

@@ -1,4 +1,4 @@
-package Vendas;
+package br.pucpcaldas.acoes;
 import org.joda.time.LocalDate;
 
 /**
@@ -26,6 +26,9 @@ public class Vendas {
      * @param data       data da negociação
      */
     public Vendas(String produto, double preco, double quantidade, double precoTotal, LocalDate data) {
+
+        if((produto != "Notebook Dell") || (produto != "Notebook Lenovo") || (produto != "Notebook Asus"))
+            throw new IllegalArgumentException("Este produto não tem na loja");
 
         if ((preco <= 0) || (precoTotal <= 0) || (quantidade <= 0) || (precoTotal <= 0))
             throw new IllegalArgumentException("valores negativos ou igual a zero não são permitidos.");
@@ -89,5 +92,5 @@ public class Vendas {
         return data;
     }
 
-  
+    public Vendas(){}
 }

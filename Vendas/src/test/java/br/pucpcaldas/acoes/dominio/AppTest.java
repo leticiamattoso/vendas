@@ -1,4 +1,4 @@
-package VendasTestes;
+package br.pucpcaldas.acoes.dominio;
 
 import static org.junit.Assert.assertTrue;
 

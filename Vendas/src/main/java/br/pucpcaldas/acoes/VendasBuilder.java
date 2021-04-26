@@ -1,4 +1,4 @@
-package Vendas;
+package br.pucpcaldas.acoes;
 import org.joda.time.LocalDate;
 
 public class VendasBuilder {
@@ -9,6 +9,10 @@ public class VendasBuilder {
     private double _precoTotal;
     private LocalDate _data;
 
+    public VendasBuilder(){
+
+    }
+    
     public VendasBuilder produto(String produto) {
         this._produto = produto;
         return this;
