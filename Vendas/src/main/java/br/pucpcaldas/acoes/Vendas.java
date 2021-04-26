@@ -92,5 +92,5 @@ public class Vendas {
         return data;
     }
 
-    public Vendas(){}
+    
 }
