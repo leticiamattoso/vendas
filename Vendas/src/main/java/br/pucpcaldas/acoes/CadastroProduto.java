@@ -9,6 +9,14 @@ public class CadastroProduto {
     public CadastroProduto(String nomeProduto, float valorCustoProduto) {
         this.nomeProduto = nomeProduto;
         this.valorCustoProduto = valorCustoProduto;
+        this.valorFinalProduto = calculaValorFinalProduto();
+        if(valorCustoProduto <= 0){
+            throw new IllegalArgumentException("Valor inválido");
+        }
+        if ((nomeProduto != "Notebook Dell") || (nomeProduto != "Notebook Lenovo") || (nomeProduto != "Notebook Asus")) {
+            throw new IllegalArgumentException("Produto invalido");
+            
+        }    
     }
 
     public String getNomeProduto() {
