@@ -4,7 +4,7 @@ import org.junit.Test;
 
 import br.pucpcaldas.acoes.CadastroProduto;
 import br.pucpcaldas.acoes.Vendas;
-public class CadastroProdutoTeste {
+public class CadastroProdutoTeste { 
     
     @Test(expected = IllegalArgumentException.class)
 
