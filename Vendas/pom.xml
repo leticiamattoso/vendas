@@ -33,7 +33,7 @@
     </dependency>
 
   </dependencies>
-
+  
   <scm>
     <developerConnection>scm:git:https://github.com/rodrigobertozzi/vendas.git</developerConnection>
     <tag>HEAD</tag>
